@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 60%;
+}
+
+body{
+
+  background: url('../images/HD-landscape-Photographs.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  header{
+    width: 80%;
+    margin: 4% auto 1% auto;
+    text-align: center;
+    .buttons{
+      position: absolute;
+      margin-top: 15px;
+      margin-right: 15px;
+      top: 0;
+      right: 0;
+      z-index: 100;
+    }
+    .buttons img{
+      margin-left: 10px;
+      width: 35px;
+      height: 35px;
+      shadow:
+        0 0 3px 3px rgba(100, 100, 100, 0.6);
+      -moz-shadow:
+        0 0 3px 3px rgba(210, 210, 210, 0.6);
+      -webkit-shadow:
+        0 0 3px 3px rgba(150, 150, 150, 0.6);
+      transition: all ease 0.3s;
+    }
+
+    .buttons img:active{
+      position: relative;
+      top: 2px;
+      opacity: 0.6;
+    }
+    p{
+      font-size: 250%;
+      font-style: italic;
+      text-decoration: underline;
+      color: rgb(53, 53, 53);
+      font-weight: 600;
+    }
+  }
+  main{
+    width: 100%;
+    height: 100%;
+    padding: 2% 4%;
+    .popular_pics{
+      width: 40%;
+      float: left;
+      border-radius: 5px;
+      background: rgba(47, 89, 123, 0.6);
+      text-align: center;
+      padding: 1% 2% 2% 2%;
+      .header{
+        margin-bottom: 5%;
+        p{
+          font-size: 190%;
+          font-style: italic;
+          color: rgb(200, 200, 200);
+        }
+      }
+      .picture{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        img{
+          width: 100%;
+          height: 100%;
+          margin: 2%;
+        }
+      }
+    }
+    .authentication{
+      float: right;
+      width: 40%;
+      .form {
+        padding: 3%;
+        border-radius: 5px;
+        background: rgba(47, 89, 123, 0.6);
+        margin-bottom: 3%;
+        text-align: center;
+        > div{
+          margin-bottom: 2%;
+        }
+        label{
+          font-size: 130%;
+          color: rgb(200, 200, 200);
+          margin-right: 2%;
+        }
+        input[type="password"], input[type="text"], input[type="email"]{
+          width: 20%;
+          height: 35px;
+          border-radius: 5px;
+          padding: 1%;
+          border: 1px solid rgb(210, 210, 210);
+          outline: none;
+          margin-right: 2%;
+        }
+        input[type="email"]{
+          width: 40%;
+        }
+        input[type="submit"]{
+          display: block;
+          width: 25%;
+          height: 35px;
+          margin: 3% auto;
+          background: rgb(226, 226, 226);
+          box-shadow: 2px 2px 1px 0 rgb(210, 210, 210);
+          -moz-box-shadow:  2px 2px 1px 0 rgb(210, 210, 210);
+          -webkit-shadow:  2px 2px 1px 0 rgb(210, 210, 210);
+          border-radius: 5px;
+          color: rgb(53, 53, 53);
+          font-size: 120%;
+          transition: ease 0.2s all;
+        }
+        input[type="submit"]:active{
+          box-shadow: none;
+          -moz-box-shadow: none;
+          -webkit-shadow: none;
+          position: relative;
+          top: 3px;
+          outline: none;
+          background: rgb(248, 57, 15);
+          border: none;
+        }
+        input[type="submit"]:focus{
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+  footer{
+    width: 65%;
+    margin: 0 auto 1% auto;
+    text-align: center;
+    background: rgba(47, 89, 123, 0.7);
+    border-radius: 5px;
+    padding: 2%;
+    p{
+      font-size: 200%;
+      font-style: italic;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+

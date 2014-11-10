@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  width: 40%;
+  height: 50px;
+  padding: 1.5%;
+  font-size: 130%;
+  background: #e2e2e2;
+  border-radius: 5px;
+  color: #323232;
+  margin: 2% auto;
+  text-align: center;
+  font-style: italic; }
+
+.wrapper {
+  width: 50%;
+  margin: 5% auto;
+  background: rgba(113, 219, 153, 0.4);
+  padding: 0.5%;
+  border: 2px solid rgba(50, 50, 50, 0.7);
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px; }
+  .wrapper .success, .wrapper .error {
+    text-align: center;
+    font-size: 95%;
+    font-weight: bold;
+    margin-bottom: 4%; }
+  .wrapper .success {
+    color: #044101; }
+  .wrapper .error {
+    color: #f8390f; }
+  .wrapper .form {
+    width: 60%;
+    padding: 3%;
+    font-size: 130%;
+    background: #e2e2e2;
+    border-radius: 5px;
+    color: #323232;
+    margin: 3% auto;
+    text-align: center; }
+    .wrapper .form label {
+      text-decoration: underline;
+      font-style: italic; }
+    .wrapper .form input[type="file"], .wrapper .form select, .wrapper .form textarea, .wrapper .form input[type="submit"] {
+      display: block;
+      margin: 3% auto; }
+    .wrapper .form select {
+      width: 50%;
+      font-size: 100%;
+      color: #323232; }
+      .wrapper .form select option {
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+    .wrapper .form textarea {
+      padding: 2%; }
+    .wrapper .form textarea:active, .wrapper .form textarea:focus, .wrapper .form select:active, .wrapper .form select:focus {
+      outline: none; }
+    .wrapper .form input[type="submit"] {
+      width: 30%;
+      height: 35px;
+      display: block;
+      margin: 3% auto;
+      background: rgba(113, 219, 153, 0.8);
+      box-shadow: 2px 2px 1px 0 #353535;
+      -moz-box-shadow: 2px 2px 1px 0 #d2d2d2;
+      -webkit-shadow: 2px 2px 1px 0 #d2d2d2;
+      border-radius: 5px;
+      color: #353535;
+      transition: ease 0.2s all;
+      font-weight: bold; }
+    .wrapper .form input[type="submit"]:active {
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-shadow: none;
+      position: relative;
+      top: 3px;
+      outline: none;
+      background: #f8390f;
+      border: none; }
+    .wrapper .form input[type="submit"]:focus {
+      outline: none; }

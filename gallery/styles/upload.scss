@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  width: 40%;
+  height: 50px;
+  padding: 1.5%;
+  font-size: 130%;
+  background: rgb(226, 226, 226);
+  border-radius: 5px;
+  color: rgb(50, 50, 50);
+  margin: 2% auto;
+  text-align: center;
+  font-style: italic;
+}
+
+.wrapper{
+  width: 50%;
+  margin: 5% auto;
+  background: rgba(113, 219, 153, 0.4);
+  padding: 0.5%;
+  border: 2px solid rgba(50, 50, 50, 0.7);
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  .success, .error{
+    text-align: center;
+    font-size: 95%;
+    font-weight: bold;
+    margin-bottom: 4%;
+  }
+  .success{
+    color: rgb(4, 65, 1);
+  }
+  .error{
+    color: #f8390f;
+  }
+  .form{
+    width: 60%;
+    padding: 3%;
+    font-size: 130%;
+    background: rgb(226, 226, 226);
+    border-radius: 5px;
+    color: rgb(50, 50, 50);
+    margin: 3% auto;
+    text-align: center;
+    label{
+      text-decoration: underline;
+      font-style: italic;
+    }
+    input[type="file"], select, textarea, input[type="submit"]{
+      display: block;
+      margin: 3% auto;
+    }
+    select{
+      width: 50%;
+      font-size: 100%;
+      color: rgb(50, 50, 50);
+      option{
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    textarea{
+      padding: 2%;
+    }
+    textarea:active, textarea:focus, select:active, select:focus{
+      outline: none;
+    }
+    input[type="submit"]{
+      width: 30%;
+      height: 35px;
+      display: block;
+      margin: 3% auto;
+      background: rgba(113, 219, 153, 0.8);
+      box-shadow: 2px 2px 1px 0 #353535;
+      -moz-box-shadow: 2px 2px 1px 0 #d2d2d2;
+      -webkit-shadow: 2px 2px 1px 0 #d2d2d2;
+      border-radius: 5px;
+      color: #353535;
+      transition: ease 0.2s all;
+      font-weight: bold;
+    }
+    input[type="submit"]:active{
+      box-shadow: none;
+      -moz-box-shadow: none;
+      -webkit-shadow: none;
+      position: relative;
+      top: 3px;
+      outline: none;
+      background: #f8390f;
+      border: none;
+    }
+    input[type="submit"]:focus{
+      outline: none;
+    }
+  }
+}

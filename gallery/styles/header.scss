@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../images/nature.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header{
+  text-align: center;
+  > div:first-of-type{
+    width: 30%;
+    height: 55px;
+    border-radius: 5px;
+    margin: 2% auto;
+    padding: 1%;
+    background: rgb(210, 210, 210);
+    font-size: 140%;
+    color: rgb(53, 53, 53);
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+  ul{
+    li{
+      display: inline-block;
+      width: 15%;
+      padding: 0.5%;
+      margin-right: 3%;
+      height: 40px;
+      color: rgb(50, 50, 50);
+      border-radius: 5px;
+      background: rgba(226, 226, 226, 0.6);
+      font-size: 130%;
+      overflow: hidden;
+      list-style: none;
+      a{
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-bottom: 2px solid rgba(53, 53, 53, 0.8);
+        color: inherit;
+        text-decoration: none;
+        transition: ease 0.2s all;
+      }
+      a:hover{
+        height: 30px;
+      }
+      ul{
+        display: none;
+        width: 14%;
+        background: rgba(245, 245, 245, 0.4);
+        padding: 0.5%;
+        position: absolute;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        li{
+          display: block;
+          width: 100%;
+          background: rgb(210, 210, 210);
+          border-radius: 5px;
+          margin-bottom: 5%;
+        }
+        a:hover{
+          height: 30px;
+        }
+        ul{
+          display: none;
+          width: 14%;
+          background: rgba(245, 245, 245, 0.4);
+          padding: 0.5%;
+          position: absolute;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          li{
+            display: block;
+            width: 100%;
+            background: rgb(210, 210, 210);
+            border-radius: 5px;
+            margin-bottom: 5%;
+          }
+        }
+      }
+      li:nth-of-type(2){
+        padding-bottom: 0;
+      }
+      li:nth-of-type(2) a{
+        height: 100%;
+        border-bottom: none;
+      }
+      li:nth-of-type(2):hover ul{
+        overflow: visible;
+        display: block;
+      }
+    }
+    li:nth-of-type(2){
+      padding-bottom: 0;
+    }
+    li:nth-of-type(2) a{
+      height: 100%;
+      border-bottom: none;
+    }
+    li:nth-of-type(2):hover ul{
+      overflow: visible;
+      display: block;
+    }
+  }
+}

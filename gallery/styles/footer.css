@@ -1,0 +1,43 @@
+footer {
+	margin: 0 auto;
+	background-color: rgba(113, 219, 153, 0.4);
+	border: 2px solid rgba(50, 50, 50, 0.7);
+	padding: 2%;
+	padding-top: 20px;
+	margin-top: 100px;
+	text-align: center;
+	width: 100%;
+}
+
+footer div {
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+
+footer div ul {
+	list-style-type: none;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+ul li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.center {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 16pt;
+    padding: 10px;
+}
+
+.logo {
+    margin-left: 44px;
+}
